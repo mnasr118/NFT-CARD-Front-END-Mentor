@@ -1,0 +1,149 @@
+@import "general.scss";
+
+.card-wrapper {
+	.card {
+		height: 543px;
+		width: 327px;
+		background-color: $Very-dark-blue-card;
+		box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.0952917);
+		border-radius: 15px;
+		.image-wrapper {
+			position: relative;
+			.logo {
+				margin: 24px;
+				height: 278px;
+				width: 278px;
+				border-radius: 8px;
+			}
+			&:hover .imgOverlay {
+				display: flex;
+			}
+			.imgOverlay {
+				margin: 24px;
+				border-radius: 8px;
+				height: 278px;
+				width: 278px;
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				background-color: rgba(0, 255, 247, 0.4);
+				display: none;
+
+				.eye {
+					width: 25px;
+					height: 25px;
+					display: block;
+					margin: auto;
+				}
+			}
+		}
+		.body-wrapper {
+			margin-left: 24px;
+			margin-right: 24px;
+
+			border: 1px;
+			border-bottom: solid;
+			border-color: $White;
+			.title {
+				font-family: $Outfit;
+				font-weight: 600;
+				font-size: 22px;
+				line-height: 28px;
+				color: $White;
+				margin: 0px;
+
+				&:hover {
+					color: $Cyan;
+				}
+			}
+			.discription {
+				margin-top: 12px;
+				margin-bottom: 15px;
+				font-weight: 300;
+				font-size: 18px;
+				line-height: 26px;
+				font-family: $Outfit;
+				color: $Soft-blue;
+			}
+			.price-wrapper {
+				margin-bottom: 10px;
+				height: 19px;
+				width: 100%;
+				display: flex;
+				.EthImg {
+					margin-right: 7px;
+				}
+				.price {
+					padding-right: 30px;
+					width: 150px;
+					margin: 0px;
+					font-family: $Outfit;
+					color: $Cyan;
+					font-weight: 600;
+					font-size: 15px;
+					line-height: 19px;
+				}
+				.action-wrapper {
+					margin-right: -100px;
+					margin: 0px;
+					display: flex;
+					width: 100%;
+					justify-content: flex-end;
+					.actionImg {
+						margin-right: 7px;
+					}
+					.callToAction {
+						margin: 0px;
+						align-items: end;
+						font: $Outfit;
+						color: $Soft-blue;
+						font-weight: 400;
+						font-size: 15px;
+						line-height: 19px;
+					}
+				}
+			}
+		}
+		.link-wrapper {
+			display: flex;
+			align-items: center;
+			padding: 16px 84px 24px 24px;
+			.linkImg {
+				margin-right: 16px;
+				border-radius: 20px;
+				box-sizing: border-box;
+				width: 33px;
+				height: 33px;
+				border: 1px solid #ffffff;
+				background: url(.png);
+				/* White */
+			}
+			.linkText {
+				font-family: "$Outfit";
+				font-style: normal;
+				font-weight: 400;
+				font-size: 15px;
+				line-height: 19px;
+
+				color: #8bacd9;
+			}
+			.link {
+				.linkAuthor {
+					margin-left: 5px;
+					font-family: "$Outfit";
+					font-style: normal;
+					font-weight: 400;
+					font-size: 15px;
+					line-height: 19px;
+
+					color: #ffffff;
+					&:hover {
+						color: $Cyan;
+					}
+				}
+			}
+		}
+	}
+}
