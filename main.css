@@ -116,7 +116,7 @@ body {
   margin-right: 24px;
   border: 1px;
   border-bottom: solid;
-  border-color: white;
+  border-color: #2f415b;
 }
 
 .card-wrapper .card .body-wrapper .title {
@@ -319,7 +319,7 @@ body {
     margin-right: 24px;
     border: 1px;
     border-bottom: solid;
-    border-color: white;
+    border-color: #2f415b;
   }
   .card-wrapper .card .body-wrapper .title {
     font-family: "Outfit", sans-serif;
